@@ -10,8 +10,6 @@ test:
 	PYTHONPATH=. py.test --verbose -s
 docker_build:
 	docker build -t hello-world-printer .
-	
-	docker build -t hello-world-printer .
 USERNAME=Tsimafe
 TAG=$(USERNAME)/hello-world-printer-k3
 docker_push: docker_build
